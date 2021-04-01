@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: "com.vanniktech.maven.publish"
+
+android {
+  compileSdkVersion 30
+}
+
+dependencies {
+  implementation "androidx.recyclerview:recyclerview:1.2.0-rc01"
+}

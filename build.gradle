@@ -1,0 +1,27 @@
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:4.0.2'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.31"
+    classpath 'com.vanniktech:gradle-maven-publish-plugin:0.14.2'
+    classpath 'org.jetbrains.dokka:dokka-gradle-plugin:1.4.10.2'
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
