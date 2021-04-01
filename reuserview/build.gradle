@@ -7,5 +7,6 @@ android {
 }
 
 dependencies {
-  implementation "androidx.recyclerview:recyclerview:1.2.0-rc01"
+  compileOnly "androidx.recyclerview:recyclerview:1.2.0-rc01"
+  compileOnly "com.android.support:recyclerview-v7:28.0.0"
 }
